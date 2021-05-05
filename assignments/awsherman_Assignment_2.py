@@ -97,7 +97,7 @@ def import_data(filename):
                 i[2]=float(i[2])
                 i[3]=float(i[3])
                 participants.append(i)
-    print(participants)
+    return participants
 
 def attack_multiplier(attacker_type, defender_type):
     """
