@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Iowa City, Iowa</pubplace>
+					<publish>Iowa DNR, Geological Survey</publish>
+				</pubinfo>
+				<origin>Iowa Department of Natural Resources</origin>
+				<pubdate>20050307</pubdate>
+				<title>Private Well Tracking System Wells - Pumping Data</title>
+				<ftname Sync="TRUE">PWTS_Production</ftname>
+				<onlink>ftp.igsb.uiowa.edu/GIS_library/ia_state/hydrologic/ground_waters/PWTS_wells.zip</onlink>
+				<edition>20100512</edition>
+			</citeinfo>
+		</citation>
+		<descript>
+			<purpose>This digital, geographically referenced data set was developed by the Iowa Department of Natural Resources to carry out agency responsibilities related to management, protection, and development of Iowa's natural resources.</purpose>
+			<supplinf>Private Well Tracking System Wells Data has four tables that provide additional data:
+PWTS_contruction provides additional information about well construction.  It can be linked (one-to-many relationship) to the well point shape file using the wellnmbr.
+PWTS_litho consists of lithologic information.  It can be linked (one-to-many relationship) to the well point shape file using the wellnmbr.
+PWTS_production contains pumping information collected from initial capacity testing.  It has a one-to-many relation ship with the shapefile and is related throught the wellnmbr field.
+PWTS_water_quality (limited availability) contains basic water quality information (bacteria and nitrate as nitrogen).  It has a one-to-many relation ship with the shapefile and is related throught the wellnmbr field.</supplinf>
+			<langdata Sync="TRUE">en</langdata>
+			<abstract>Point locations of wells entered into the Iowa DNR Private Well Tracking System.  Includes private well permits, well test registration, abandoned well registration, and well renovation registration administered by the grants-to-counties program.</abstract>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20100512</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>edition date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Quarterly</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-96.665581</westbc>
+				<eastbc Sync="TRUE">-90.097595</eastbc>
+				<northbc Sync="TRUE">43.554006</northbc>
+				<southbc Sync="TRUE">40.346534</southbc>
+			</bounding>
+			<lboundng>
+				<leftbc Sync="TRUE">203624.249776</leftbc>
+				<rightbc Sync="TRUE">734581.931247</rightbc>
+				<bottombc Sync="TRUE">4472067.065342</bottombc>
+				<topbc Sync="TRUE">4822339.161028</topbc>
+			</lboundng>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>ISO 19115 Topic Category</themekt>
+				<themekey>geoscientificInformation</themekey>
+			</theme>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>wells</themekey>
+				<themekey>private wells</themekey>
+				<themekey>water supply wells</themekey>
+			</theme>
+			<place>
+				<placekt>GNIS</placekt>
+				<placekey>Iowa</placekey>
+			</place>
+		</keywords>
+		<useconst>None</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntorg>Iowa Department of Natural Resources</cntorg>
+					<cntper>Russell Tell</cntper>
+				</cntperp>
+				<cntaddr>
+					<address>401 SW 7th St., Suite M</address>
+					<addrtype>mailing and physical address</addrtype>
+					<city>Des Moines</city>
+					<state>IA</state>
+					<postal>50309</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>515-725-0462</cntvoice>
+			</cntinfo>
+		</ptcontac>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</native>
+		<natvform Sync="TRUE">dBASE Table</natvform>
+		<secinfo>
+			<secsys>State of Iowa Enterprise Data Classification Standard</secsys>
+			<secclass>Public</secclass>
+		</secinfo>
+		<datacred>Mary Howes developed and maintains this dataset for the DNR.</datacred>
+	</idinfo>
+	<dataqual>
+		<posacc>
+			<horizpa>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<title>Private Well Tracking System</title>
+						<origin>Iowa DNR</origin><onlink>http://programs.iowadnr.gov/pwts/</onlink></citeinfo>
+				</srccite>
+				<srcscale>None</srcscale>
+				<typesrc>Electronic database</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>20070325</caldate>
+						</sngdate>
+					</timeinfo>
+				</srctime>
+			</srcinfo>
+			<procstep>
+				<procdesc>Data are downloaded from MS SQL Server database using several DTS packages to transform from native format to DBase IV format.  From there an Arcview application is used to develop spatial data from stored coordinates and attribute tables are populated.</procdesc>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="private_well_tracking_system">
+				<sdtstype>Entity point</sdtstype>
+				<ptvctcnt>7217</ptvctcnt></sdtsterm>
+			<esriterm Name="private_well_tracking_system"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Point</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">34945</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>0.001024</absres>
+						<ordres>0.001024</ordres>
+					</coordrep>
+					<plandu>meters</plandu>
+				</planci>
+				<gridsys><gridsysn Sync="TRUE">Universal Transverse Mercator</gridsysn><utm><utmzone Sync="TRUE">15</utmzone><transmer><sfctrmer Sync="TRUE">0.999600</sfctrmer><longcm Sync="TRUE">-93.000000</longcm><latprjo Sync="TRUE">0.000000</latprjo><feast Sync="TRUE">500000.000000</feast><fnorth Sync="TRUE">0.000000</fnorth></transmer></utm></gridsys></planar>
+			<geodetic>
+				<horizdn>North American Datum of 1983</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137.000000</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn></cordsysn></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="PWTS_Production">
+			<enttyp><enttypl Sync="TRUE">PWTS_Production</enttypl><enttypt Sync="TRUE">Table</enttypt><enttypc Sync="TRUE">12973</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">WELLNMBR</attrlabl><attalias Sync="TRUE">wellnmbr</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><attrdef>Unique id assigned in original MS SQL Server database, used as foreign key in one-to-many relationship (production is the "many" element).</attrdef><attrdefs>PWTS documentation</attrdefs><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">OBJECTID</attrlabl><attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">OID</attrlabl><attalias Sync="TRUE">OID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">aqfr_lith</attrlabl><attalias Sync="TRUE">aqfr_lith</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">20</attwidth><attrdef>Brief description of the lithology of the aquifer</attrdef></attr><attr><attrlabl Sync="TRUE">WTR_TOP</attrlabl><attalias Sync="TRUE">wtr_top</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Depth (ft.) to top of main water-bearing zone</attrdef><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">WTR_BTM</attrlabl><attalias Sync="TRUE">wtr_btm</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Depth (ft.) to bottom of main water bearing zone</attrdef><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">SWL</attrlabl><attalias Sync="TRUE">SWL</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Static water level - depth (ft.) to top of water before pumping</attrdef><attrdefs>IGS</attrdefs></attr><attr><attrlabl Sync="TRUE">SWL_abv_gd</attrlabl><attalias Sync="TRUE">SWL_abv_gd</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">4</attwidth><attrdef>True if the static water level is above the ground surface.</attrdef></attr><attr><attrlabl Sync="TRUE">PWL</attrlabl><attalias Sync="TRUE">PWL</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Pumped water level - depth (ft.) to water after pumping</attrdef></attr><attr><attrlabl Sync="TRUE">Yield_gpm</attrlabl><attalias Sync="TRUE">Yield_gpm</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth><attrdef>Well yield in gallons per minute</attrdef></attr><attr><attrlabl Sync="TRUE">PMP_DTE</attrlabl><attalias Sync="TRUE">Pmp_dte</attalias><attrtype Sync="TRUE">Date</attrtype><attwidth Sync="TRUE">8</attwidth><attrdef>Date of capacity test</attrdef><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">iWellID</attrlabl><attalias Sync="TRUE">iWellID</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr></detailed>
+		<overview/>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Iowa Geological and Water Survey, DNR</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>109 Trowbridge Hall</address>
+					<city>Iowa City</city>
+					<state>IA</state>
+					<postal>52242</postal>
+				</cntaddr>
+				<cntvoice>319-335-1575</cntvoice>
+				<cntemail>gis_library@igsb.uiowa.edu</cntemail>
+				<cntpos>GeoSpatial DBA / NRGIS Librarian</cntpos>
+			</cntinfo>
+		</distrib>
+		<distliab>Although efforts have been made in correcting errors in order to make this information useful
+to the Department, the Department assumes no responsibility for errors in the information.
+Similarly, the Department assumes no responsibility for the consequences of inappropriate uses
+or interpretations of the data made by anyone to whom this data has been made available.
+The Department bears no responsibility to inform users of any changes made to this data.
+Anyone using this data is advised that precision implied by the coverage may far exceed
+actual precision.  Comments on this data are invited and the Department would appreciate
+that documented errors be brought to staff attention.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>shapefile</formname>
+					<filedec>zip</filedec>
+					<transize Sync="TRUE">1.312</transize>
+					<dssize Sync="TRUE">1.312</dssize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>ftp.igsb.uiowa.edu/GIS_library/ia_state/hydrologic/ground_waters/PWTS_wells.zip</networkr>
+							</networka>
+						</computer>
+						<accinstr>Click on link provided.</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>None</fees>
+			<ordering>Click on web address provided.</ordering>
+			<turnarnd>Immediate</turnarnd>
+		</stdorder>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>365 days/year</caldate>
+					<time>24 hours/day</time>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+		<resdesc>Downloadable Data</resdesc>
+	</distinfo>
+	<metainfo>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Iowa Geological and Water Survey, DNR</cntorg>
+					<cntper>NRGIS Librarian</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>Mailing and Physical</addrtype>
+					<address>109 Trowbridge Hall</address>
+					<city>Iowa City</city>
+					<state>IA</state>
+					<postal>52242-1319</postal>
+				</cntaddr>
+				<cntvoice>319-335-1575</cntvoice>
+				<cntemail>gis_library@igsb.uiowa.edu</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+		<metac>None</metac>
+		<metuc>None</metuc>
+		<metd>20050307</metd>
+		<metrd>20091103</metrd>
+		<langmeta Sync="TRUE">en</langmeta>
+		<metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><MetaID>{C40B2A7D-9005-412C-9F6D-F644456DB4EC}</MetaID><CreaDate>20040112</CreaDate><CreaTime>13543400</CreaTime><SyncOnce>FALSE</SyncOnce><ModDate>20121012</ModDate><ModTime>09562800</ModTime><SyncDate>20100512</SyncDate><SyncTime>14380700</SyncTime></Esri><mdDateSt Sync="TRUE">20121012</mdDateSt><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">PWTS_Production</resTitle><presForm><PresFormCd Sync="TRUE" value="011"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">203615.931028</westBL><eastBL Sync="TRUE">734588.402994</eastBL><northBL Sync="TRUE">4822123.72276</northBL><southBL Sync="TRUE">4472816.935272</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-96.665567</westBL><eastBL Sync="TRUE">-90.097607</eastBL><northBL Sync="TRUE">43.552065</northBL><southBL Sync="TRUE">40.353275</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\dnriacfs01\gag\WellSearch\welldata_83\library_copy\PWTS\PWTS_Production.dbf</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">1.312</transSize></distorTran><distorFormat><formatName Sync="TRUE">dBASE Table</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">NAD_1983_UTM_Zone_15N</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="private_well_tracking_system"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="004"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">34945</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo></metadata>
